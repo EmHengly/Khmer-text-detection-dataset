@@ -54,7 +54,6 @@ Where:
 ## Getting Started
 1. **Download the Dataset:** You can download the dataset files from Kaggle Link: (https://www.kaggle.com/datasets/emhengly/khmer-text-detection-dataset).
 2. **Unzip the Files:** Make sure to unzip the downloaded files if they come in compressed format.
-3. **Explore the Label File:** The label file maps each image to its Khmer word label, allowing you to easily load and preprocess data for model training.
 
 ## Citation
 If you use this dataset in your research, please cite:
