@@ -23,7 +23,7 @@ Below is an example image from the dataset, along with its label structure:
 
 ### XML File Example:
 Here is an example of how the XML annotations are structured:
-```xml
+```
 <image>
   <width>800</width>
   <height>600</height>
@@ -37,11 +37,12 @@ Here is an example of how the XML annotations are structured:
     </line>
   </paragraph>
 </image>
-
+```
 ### YOLO File Example:
 Each YOLOv8 annotation file contains one line per word:
+```
 <class_id> <x_center> <y_center> <width> <height>
-
+```
 Where:
 - <class_id>: Typically set to 0 (for single class detection of Khmer text).
 - <x_center>, <y_center>, <width>, and <height> are normalized to the range [0, 1].
