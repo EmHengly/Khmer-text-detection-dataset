@@ -39,11 +39,12 @@ Here is an example of how the XML annotations are structured:
 </image>
 
 ### YOLO File Example:
-```txt
+Each YOLOv8 annotation file contains one line per word:
 <class_id> <x_center> <y_center> <width> <height>
 
-
-
+Where:
+- <class_id>: Typically set to 0 (for single class detection of Khmer text).
+- <x_center>, <y_center>, <width>, and <height> are normalized to the range [0, 1].
 
 ## Getting Started
 1. **Download the Dataset:** You can download the dataset files from [Kaggle Dataset][(https://www.kaggle.com/datasets/emhengly/khmer-text-recognition-dataset)](https://www.kaggle.com/datasets/emhengly/khmer-text-detection-dataset).
