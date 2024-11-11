@@ -19,19 +19,22 @@ This dataset contains **10,050 synthetic images** with Khmer text, specifically 
 
 ### Example Image
 Below is an example image from the dataset, along with its label structure:
-![image](https://github.com/user-attachments/assets/58b35905-cd3c-47fd-b7ae-952cc59526ac)
+![image](https://github.com/user-attachments/assets/65368e22-096f-4c4c-9c2f-d65b02912b9d)
+
 
 ### XML File Example:
 Here is an example of how the XML annotations are structured:
 ```
-<image>
-  <width>800</width>
-  <height>600</height>
-  <paragraph>
-    <line>
+<metadata>
+  <image>kh_data_323.png</image>
+  <width>803</width>
+  <height>784</height>
+  <paragraph/>
+  <paragraph id="1">
+    <line id="1">
       <word>
-        <bbox> [x1, y1, x2, y2] </bbox>
-        <text>គម្រោង</text>
+        <text>ក្រសួង</text>
+        <bbox> x1="65" y1="10" x2="127" y2="42" </bbox>
       </word>
       ...
     </line>
@@ -42,6 +45,7 @@ Here is an example of how the XML annotations are structured:
 Each YOLOv8 annotation file contains one line per word:
 ```
 <class_id> <x_center> <y_center> <width> <height>
+0  0.028402  0.039613  0.030383  0.044014
 ```
 Where:
 - <class_id>: Typically set to 0 (for single class detection of Khmer text).
